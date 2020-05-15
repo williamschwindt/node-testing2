@@ -2,8 +2,8 @@
 exports.seed = async function(knex) {
   await knex('users').truncate()
   await knex('users').insert([
-    { name: 'william', password: '123' },
-    { name: 'james', password: '123' },
-    { name: 'matt', password: '123' }
+    { username: 'william', password: '123' },
+    { username: 'james', password: '123' },
+    { username: 'matt', password: '123' }
   ])
 };
